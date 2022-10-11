@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothing : checkout</title>
+
+    <link rel="stylesheet" href="css/ecomsignup.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <div class="alert-box">
+       <img src="img/error.jpg" class="alert-img">
+       <p class="alert-msg"></p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">checkout</h1>
+        <p class="text">delivery adress</p>
+             <input type="text" id="adress" placeholder="Address">
+             <input type="text" id="street" placeholder="Street">
+        <div class="three-input-container">
+             <input type="text" id="city" placeholder="City">
+             <input type="text" id="state" placeholder="State">
+             <input type="text" id="pincode" placeholder="Pin code">
+        </div>
+        <input type="text" id="landmark" placeholder="Land mark">
+    </div>
+
+
+    <div class="cart-section">
+        <div class="product-list">
+            <p class="section-heading">your cart</p>
+              <div class="cart">
+                
+              </div>
+        </div>
+        <div class="checkout-section">
+           <div class="checkout-box">
+               <p class="text">your total bill,</p>
+               <h1 class="bill">$00</h1>
+               <button class="place-order-btn">place order</button>
+           </div>
+        </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

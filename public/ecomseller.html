@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seller dashboard</title>
+
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/ecomsignup.css">
+    <link rel="stylesheet" href="css/seller.css">
+   
+    
+</head>
+<body>
+
+    <img src="img/loader1.gif" class="loader">
+
+    <div class="alert-box ">
+      <img src="img/error.jpg" class="alert-img">
+      <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/logo3.png" class="logo">
+
+    <!-----------------becomm seller element-->
+    <div class="become-seller hide">
+        <p class="heading">become a seller</p>
+        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum eos ullam, officia, ducimus culpa amet consectetur quae nisi sequi officiis corrupti atque laboriosam minima vitae quibusdam, similique mollitia a.
+        </p>
+        <button class="btn" id="apply-btn">apply for seller account</button>
+    </div>
+
+    <!-------------apply form-->
+    <div class="apply-form">
+       <input type="text" id="business-name" placeholder="Business Name / Compagny
+       name / shop name">
+       <textarea id="business-add" placeholder="Adress"></textarea>
+       <textarea id="about" placeholder="About"></textarea>
+       <input type="text" id="number" placeholder="Number">
+       <input type="checkbox" checked class="checkbox"id="terms-and-cond">
+       <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
+       <br>
+       <input type="checkbox" checked class="checkbox"id="legitInfo">
+       <label for="legitInfo">all information is legit</a>
+       </label>
+       <button class="submit-btn" id="apply-form-btn">Apply</button>
+    </div>
+
+    <!-----------------list des produits--->
+    <div class="product-listing hide">
+      <div class="add-product">
+        <p class="add-product-title">Ajouter produit</p>
+        <button class="btn" onclick="location.href='/add-product'">Ajouter produit</button>
+      </div>
+      <img src="img/cf.jpg" class="no-product-image hide">
+
+     <!-----------delete-alert------->
+     <div class="delete-alert">
+           <div class="alert">
+              <button class="close-btn">
+                <img src="img/close.png">
+              </button>
+              <img src="img/delete.png" class="delete-svg">
+              <p class="text">are you sur ? you want to delete this product</p>
+              <button class="delete-btn">Delete</button>
+            </div>
+     </div>
+      <!------cards---->
+      <div class="product-container">
+       <!----<div class="product-card">
+          <div class="product-image">
+              <span class="tag">Draft</span>
+              <img class="product-thumb" src="img/basket1.jpg">
+              <button class="card-action-btn edit-btn"><img  src="img/edit.png"></button>
+              <button class="card-action-btn open-btn"><img  src="img/open.png"></button>
+              <button class="card-action-btn delete-popup-btn"><img  src="img/delete.png"></button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Basket</h2>
+              <p class="product-short-des">a Nike line about the cloth...</p>
+              <span class="price">12500Fcfa</span>
+              <span class="actual-price">10000Fcfa</span>
+          </div>
+      </div>
+      </div>-->
+    </div>
+
+    
+    
+    
+    
+    <script src="js/token.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/seller.js"></script>
+</body>
+</html>
